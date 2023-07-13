@@ -9,47 +9,55 @@
     <title>Pixel To Rem</title>
   </head>
   <body>
-    <div class="container px-to-rem-content-container">
-      <div class="px-to-rem-content">
-        <h1>Devcodinos Pixel to Rem Converter</h1>
-        <form method="get" id="px-to-rem-form" class="px-to-rem-form">
-          <div class="form-elements-container">
-            <div class="form-element-container">
-              <label for="input-fontsize">Fontsitze </label>
-              <div class="inputContainer">
-                <input
-                  id="input-fontsize"
-                  type="number"
-                  min="8"
-                  placeholder="16"
-                  value="16"
-                  name="fontsize"
-                />
-                <div class="unit-desc">px</div>
+    <div class="background-layer">
+      <div class="container px-to-rem-content-container">
+        <div class="px-to-rem-content">
+          <div>
+            <p>Devcodinos</p>
+            <h1>Pixel to Rem Converter</h1>
+          </div>
+          <form method="get" id="px-to-rem-form" class="px-to-rem-form">
+            <div class="form-elements-container">
+              <div class="form-element-container">
+                <label for="input-fontsize">Fontsitze </label>
+                <div class="inputContainer">
+                  <input
+                    id="input-fontsize"
+                    type="number"
+                    min="8"
+                    placeholder="16"
+                    value="16"
+                    name="fontsize"
+                  />
+                  <div class="unit-desc">px</div>
+                </div>
+              </div>
+              <div class="form-element-container">
+                <label for="input-pixel">Pixel</label>
+                <div class="inputContainer">
+                  <input
+                    id="input-pixel"
+                    type="text"
+                    placeholder="16px"
+                    name="givenPx"
+                    value="16"
+                  />
+                  <div class="unit-desc">em/rem</div>
+                </div>
               </div>
             </div>
-            <div class="form-element-container">
-              <label for="input-pixel">Pixel</label>
-              <div class="inputContainer">
-                <input
-                  id="input-pixel"
-                  type="text"
-                  placeholder="16px"
-                  name="givenPx"
-                  value="16"
-                />
-                <div class="unit-desc">em/rem</div>
-              </div>
+            <div class="result-Area">
+              <h2 id="result-in-rem" data-tooltip="Click to copy">1em</h2>
             </div>
-          </div>
-          <div class="result-Area">
-            <h2 id="result-in-rem">1</h2>
-          </div>
-          <div class="submit-container">
-            <button class="submit-btn" type="submit">Convert</button>
-          </div>
-        </form>
+            <div class="submit-container">
+              <button class="submit-btn" type="submit">Convert</button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
+    <div class="infoAlert">
+      <p class="infoAlertText"></p>
     </div>
   </body>
 </html>
