@@ -1,6 +1,17 @@
 const pxToRemForm = document.querySelector("#px-to-rem-form");
 const remResult = document.querySelector("#result-in-rem");
 
+remResult.addEventListener("click", async () => {
+  const text = remResult.innerText;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    console.log("Text kopiert");
+  } catch (err) {
+    console.log("Fehler beim Kopieren", err);
+  }
+});
+
 pxToRemForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const { fontsize, givenPx } = event.target.elements;

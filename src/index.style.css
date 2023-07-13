@@ -1,9 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 22, 22);
+  color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.px-to-rem-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  height: 100vh;
+}
+
+.blob {
+  position: absolute;
+  z-index: -2;
+  transform: scale(0.6);
+  right: 15em;
+  transition: 2s ease-in-out;
+}
+
+.px-to-rem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 3em;
+  border-radius: 2em;
+  background-color: rgb(37, 37, 37);
+}
+
+.px-to-rem-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.form-elements-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-element-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: none;
+}
+
+input {
+  padding: 1em 0.5em;
+  border-radius: 1em 0 0 1em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: lightgray;
+}
+
+input:focus {
+  background-color: white;
+}
+
+.unit-desc {
+  background-color: gray;
+  height: 100%;
+  text-align: center;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.result-Area,
+.submit-container {
+  text-align: center;
+}
+
+.submit-btn {
+  padding: 1em 2em;
+  border-radius: 1em;
+  border: none;
+  background-color: #ff0066;
+  color: black;
+  font-weight: 600;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(165, 3, 65);
 }
 
 @media (min-width: 576px) {
