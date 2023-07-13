@@ -16,12 +16,18 @@
             <p>Devcodinos</p>
             <h1>Pixel to Rem Converter</h1>
           </div>
-          <form method="get" id="px-to-rem-form" class="px-to-rem-form">
+          <form
+            method="get"
+            id="px-to-rem-form"
+            class="px-to-rem-form"
+            aria-label="The Pixel to Rem converter formular"
+          >
             <div class="form-elements-container">
               <div class="form-element-container">
                 <label for="input-fontsize">Fontsitze </label>
                 <div class="inputContainer">
                   <input
+                    aria-label="Input for the default fontsize"
                     id="input-fontsize"
                     type="number"
                     min="8"
@@ -36,6 +42,7 @@
                 <label for="input-pixel">Pixel</label>
                 <div class="inputContainer">
                   <input
+                    aria-label="Input for pixels you want to convert"
                     id="input-pixel"
                     type="text"
                     placeholder="16px"
@@ -47,10 +54,22 @@
               </div>
             </div>
             <div class="result-Area">
-              <h2 id="result-in-rem" data-tooltip="Click to copy">1em</h2>
+              <h2
+                id="result-in-rem"
+                data-tooltip="Click to copy"
+                aria-label="The result in em/rem"
+              >
+                1em
+              </h2>
             </div>
             <div class="submit-container">
-              <button class="submit-btn" type="submit">Convert</button>
+              <button
+                aria-label="The submit button to start the converter"
+                class="submit-btn"
+                type="submit"
+              >
+                Convert
+              </button>
             </div>
           </form>
         </div>
